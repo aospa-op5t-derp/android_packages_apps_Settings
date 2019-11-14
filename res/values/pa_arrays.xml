@@ -61,6 +61,18 @@
         <item>@string/security_settings_fingerprint_sensor_location_front</item> <!-- FOD -->
     </string-array>
 
+    <!-- Refresh rate -->
+    <string-array name="refresh_rate_entries">
+        <item>@string/auto_refresh_rate</item>
+        <item>60Hz</item>
+        <item>90Hz</item>
+    </string-array>
+    <string-array name="refresh_rate_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Hardware key rebinding -->
     <string-array name="hardware_keys_action_entries" translatable="false">
         <item>@string/hardware_keys_action_nothing</item>
@@ -83,5 +95,4 @@
         <item>6</item>
         <item>7</item>
     </string-array>
-
 </resources>
