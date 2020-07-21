@@ -249,4 +249,7 @@
     <string name="battery_style_bar">Battery bar</string>
     <string name="battery_style_circle">Battery circle</string>
     <string name="battery_style_hidden">Battery hidden</string>
+
+    <!-- Clipboard toast toggle -->
+    <string name="show_clipboard_toast">Show clipboard access toast</string>
 </resources>
