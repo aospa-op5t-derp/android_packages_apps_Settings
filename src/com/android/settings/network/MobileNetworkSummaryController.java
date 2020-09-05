@@ -28,9 +28,7 @@ import android.telephony.SubscriptionManager;
 import android.telephony.euicc.EuiccManager;
 
 import com.android.settings.R;
-import com.android.settings.core.FeatureFlags;
 import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settings.development.featureflags.FeatureFlagPersistent;
 import com.android.settings.network.telephony.MobileNetworkActivity;
 import com.android.settings.network.telephony.MobileNetworkUtils;
 import com.android.settings.widget.AddPreference;
@@ -182,8 +180,7 @@ public class MobileNetworkSummaryController extends AbstractPreferenceController
 
     @Override
     public boolean isAvailable() {
-        return !Utils.isWifiOnly(mContext) && mUserManager.isAdminUser()
-            && !FeatureFlagPersistent.isEnabled(mContext, FeatureFlags.NETWORK_INTERNET_V2);
+        return !Utils.isWifiOnly(mContext) && mUserManager.isAdminUser();
     }
 
     @Override
